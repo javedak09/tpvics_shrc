@@ -175,6 +175,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMSHIMG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMSHIMG.designer.cs">
+      <DependentUpon>frmMSHIMG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermissions.designer.cs">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrystalReport1.rpt">
@@ -184,6 +208,18 @@
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMSHIMG.resx">
+      <DependentUpon>frmMSHIMG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPermissions.resx">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

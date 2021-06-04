@@ -103,8 +103,10 @@ namespace tpvics_shrc
 
         static double zscore;
 
-        static string SERVER_URL = "https://vcoe1.aku.edu/naunehal/api/sync.php";
-        static string TESTING_URL = "http://F38158/naunehal/api/sync.php";
+        static string SERVER_URL = "https://vcoe1.aku.edu/naunehal/api/";
+        static string TESTING_URL = "http://F38158/naunehal/api/";
+        static string GET_DATA_FILENAME = "getData.php";
+        static string SYNC_DATA_FILENAME = "sync.php";
 
 
 
@@ -128,6 +130,25 @@ namespace tpvics_shrc
             get
             {
                 return TESTING_URL;
+            }
+        }
+
+
+
+        public static string getDataFileName
+        {
+            get
+            {
+                return GET_DATA_FILENAME;
+            }
+        }
+
+
+        public static string getSyncFileName
+        {
+            get
+            {
+                return SYNC_DATA_FILENAME;
             }
         }
 
