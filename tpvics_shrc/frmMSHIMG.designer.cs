@@ -100,7 +100,6 @@
             this.mh01704 = new System.Windows.Forms.CheckBox();
             this.chkNoneDiag = new System.Windows.Forms.CheckBox();
             this.FORM_ID = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.mh01103 = new System.Windows.Forms.MaskedTextBox();
             this.mh01102 = new System.Windows.Forms.MaskedTextBox();
             this.mh01101 = new System.Windows.Forms.MaskedTextBox();
@@ -112,7 +111,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.mh02902 = new System.Windows.Forms.RadioButton();
             this.mh02901 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.mh02502 = new System.Windows.Forms.RadioButton();
             this.mh02501 = new System.Windows.Forms.RadioButton();
@@ -165,6 +163,8 @@
             this.mh02601 = new System.Windows.Forms.CheckBox();
             this.mh016 = new System.Windows.Forms.MaskedTextBox();
             this.mh015 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1059,18 +1059,6 @@
             this.FORM_ID.TabIndex = 1;
             this.FORM_ID.Leave += new System.EventHandler(this.FORM_ID_Leave);
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(597, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(48, 15);
-            this.textBox2.TabIndex = 345;
-            this.textBox2.Text = "Form ID";
-            // 
             // mh01103
             // 
             this.mh01103.BackColor = System.Drawing.Color.White;
@@ -1184,17 +1172,6 @@
             this.mh02901.TabStop = true;
             this.mh02901.Text = "Yes";
             this.mh02901.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(113, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 15);
-            this.textBox1.TabIndex = 341;
-            this.textBox1.Text = "District";
             // 
             // panel6
             // 
@@ -1753,13 +1730,36 @@
             this.mh015.TabIndex = 21;
             this.mh015.Leave += new System.EventHandler(this.mh015_Leave);
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(113, 102);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(40, 15);
+            this.textBox1.TabIndex = 341;
+            this.textBox1.Text = "District";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(597, 46);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(48, 15);
+            this.textBox2.TabIndex = 345;
+            this.textBox2.Text = "Form ID";
+            // 
             // frmMSHIMG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 300);
-            this.ClientSize = new System.Drawing.Size(1119, 1045);
+            this.ClientSize = new System.Drawing.Size(1136, 1045);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1911,7 +1911,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton mh02102;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button cmdNewID;
         private System.Windows.Forms.Panel panel8;
@@ -1919,7 +1918,6 @@
         private System.Windows.Forms.MaskedTextBox mh01103;
         private System.Windows.Forms.MaskedTextBox mh01102;
         private System.Windows.Forms.MaskedTextBox mh01101;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.MaskedTextBox FORM_ID;
         private System.Windows.Forms.CheckBox chkNoneDiag;
         private System.Windows.Forms.CheckBox mh01704;
@@ -1937,5 +1935,7 @@
         private System.Windows.Forms.RadioButton mh03102;
         private System.Windows.Forms.RadioButton mh03101;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
