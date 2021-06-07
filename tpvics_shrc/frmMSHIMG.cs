@@ -4605,5 +4605,10 @@ namespace tpvics_shrc
             obj_op = null;
 
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
