@@ -1295,7 +1295,11 @@ namespace tpvics_shrc
                     fd.mh09y = ds.Tables[0].Rows[a]["mh09y"].ToString();
                     fd.mh09m = ds.Tables[0].Rows[a]["mh09m"].ToString();
                     fd.mh09d = ds.Tables[0].Rows[a]["mh09d"].ToString();
+
                     fd.mh010 = ds.Tables[0].Rows[a]["mh010"].ToString();
+                    fd.mh010a = ds.Tables[0].Rows[a]["mh010a"].ToString();
+
+
                     fd.mh011 = ds.Tables[0].Rows[a]["mh011"].ToString();
                     fd.mh012 = ds.Tables[0].Rows[a]["mh012"].ToString();
                     fd.chkWeight = ds.Tables[0].Rows[a]["chkWeight"].ToString();
@@ -1311,6 +1315,8 @@ namespace tpvics_shrc
                     fd.mh01702 = ds.Tables[0].Rows[a]["mh01702"].ToString();
                     fd.mh01703 = ds.Tables[0].Rows[a]["mh01703"].ToString();
                     fd.mh01704 = ds.Tables[0].Rows[a]["mh01704"].ToString();
+                    fd.mh01705 = ds.Tables[0].Rows[a]["mh01705"].ToString();
+
                     fd.mh017077 = ds.Tables[0].Rows[a]["mh017077"].ToString();
                     fd.mh017077x = ds.Tables[0].Rows[a]["mh017077x"].ToString();
 
@@ -1394,6 +1400,12 @@ namespace tpvics_shrc
                     fd.mh027 = ds.Tables[0].Rows[a]["mh027"].ToString();
                     fd.mh028 = ds.Tables[0].Rows[a]["mh028"].ToString();
                     fd.mh029 = ds.Tables[0].Rows[a]["mh029"].ToString();
+
+                    fd.mh033 = ds.Tables[0].Rows[a]["mh033"].ToString();
+                    fd.mh032 = ds.Tables[0].Rows[a]["mh032"].ToString();
+
+                    fd.mh030 = ds.Tables[0].Rows[a]["mh030"].ToString();
+                    fd.mh031 = ds.Tables[0].Rows[a]["mh031"].ToString();
 
                     fd.mh01101 = ds.Tables[0].Rows[a]["mh01101"].ToString();
                     fd.mh01102 = ds.Tables[0].Rows[a]["mh01102"].ToString();
@@ -1504,6 +1516,7 @@ namespace tpvics_shrc
             public string mh09m;
             public string mh09d;
             public string mh010;
+            public string mh010a;
             public string mh011;
             public string mh012;
             public string chkWeight;
@@ -1517,6 +1530,7 @@ namespace tpvics_shrc
             public string mh01702;
             public string mh01703;
             public string mh01704;
+            public string mh01705;
             public string mh017077;
             public string mh017077x;
 
@@ -1592,6 +1606,13 @@ namespace tpvics_shrc
             public string mh027;
             public string mh028;
             public string mh029;
+
+
+            public string mh033;
+            public string mh032;
+
+            public string mh030;
+            public string mh031;
 
 
             public string mh01101;
