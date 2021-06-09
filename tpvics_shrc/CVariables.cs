@@ -103,8 +103,8 @@ namespace tpvics_shrc
 
         static double zscore;
 
-        static string SERVER_URL = "https://vcoe1.aku.edu/naunehal/api/";
-        static string TESTING_URL = "http://F38158/naunehal/api/";
+        static string SERVER_URL = "https://vcoe1.aku.edu/SHRUC_HC/api/";
+        static string TESTING_URL = "http://F38158/tpvics_shrc/api/";
         static string GET_DATA_FILENAME = "getData.php";
         static string SYNC_DATA_FILENAME = "sync.php";
 

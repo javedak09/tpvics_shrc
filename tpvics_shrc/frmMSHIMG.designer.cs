@@ -83,6 +83,17 @@
             this.mh02101 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.mh03302 = new System.Windows.Forms.RadioButton();
+            this.mh03301 = new System.Windows.Forms.RadioButton();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.mh03202 = new System.Windows.Forms.RadioButton();
+            this.mh03201 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mhremarks = new System.Windows.Forms.MaskedTextBox();
             this.mh01104 = new System.Windows.Forms.MaskedTextBox();
             this.mh014 = new System.Windows.Forms.ComboBox();
             this.mh013 = new System.Windows.Forms.ComboBox();
@@ -142,7 +153,6 @@
             this.mh02802 = new System.Windows.Forms.RadioButton();
             this.mh02801 = new System.Windows.Forms.RadioButton();
             this.mh027a2 = new System.Windows.Forms.CheckBox();
-            this.mh027b = new System.Windows.Forms.CheckBox();
             this.mh027a1 = new System.Windows.Forms.CheckBox();
             this.mh02606 = new System.Windows.Forms.CheckBox();
             this.mh02605 = new System.Windows.Forms.CheckBox();
@@ -162,9 +172,10 @@
             this.mh02601 = new System.Windows.Forms.CheckBox();
             this.mh016 = new System.Windows.Forms.MaskedTextBox();
             this.mh015 = new System.Windows.Forms.MaskedTextBox();
-            this.mhremarks = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -750,6 +761,12 @@
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.panel13);
+            this.tabPage1.Controls.Add(this.panel12);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.mhremarks);
             this.tabPage1.Controls.Add(this.mh01104);
             this.tabPage1.Controls.Add(this.mh014);
@@ -792,7 +809,6 @@
             this.tabPage1.Controls.Add(this.mh027a2);
             this.tabPage1.Controls.Add(this.mh09y);
             this.tabPage1.Controls.Add(this.mh09m);
-            this.tabPage1.Controls.Add(this.mh027b);
             this.tabPage1.Controls.Add(this.mh027a1);
             this.tabPage1.Controls.Add(this.mh02606);
             this.tabPage1.Controls.Add(this.mh02605);
@@ -866,7 +882,111 @@
             this.tabPage1.Size = new System.Drawing.Size(862, 1039);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(344, 781);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 15);
+            this.label5.TabIndex = 364;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.mh03302);
+            this.panel13.Controls.Add(this.mh03301);
+            this.panel13.Location = new System.Drawing.Point(342, 744);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(84, 24);
+            this.panel13.TabIndex = 359;
+            // 
+            // mh03302
+            // 
+            this.mh03302.AutoSize = true;
+            this.mh03302.Location = new System.Drawing.Point(41, 7);
+            this.mh03302.Name = "mh03302";
+            this.mh03302.Size = new System.Drawing.Size(14, 13);
+            this.mh03302.TabIndex = 82;
+            this.mh03302.TabStop = true;
+            this.mh03302.UseVisualStyleBackColor = true;
+            this.mh03302.CheckedChanged += new System.EventHandler(this.mh03302_CheckedChanged);
+            // 
+            // mh03301
+            // 
+            this.mh03301.AutoSize = true;
+            this.mh03301.Location = new System.Drawing.Point(3, 7);
+            this.mh03301.Name = "mh03301";
+            this.mh03301.Size = new System.Drawing.Size(14, 13);
+            this.mh03301.TabIndex = 81;
+            this.mh03301.TabStop = true;
+            this.mh03301.UseVisualStyleBackColor = true;
+            this.mh03301.CheckedChanged += new System.EventHandler(this.mh03301_CheckedChanged);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.mh03202);
+            this.panel12.Controls.Add(this.mh03201);
+            this.panel12.Location = new System.Drawing.Point(342, 715);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(84, 24);
+            this.panel12.TabIndex = 363;
+            // 
+            // mh03202
+            // 
+            this.mh03202.AutoSize = true;
+            this.mh03202.Location = new System.Drawing.Point(41, 6);
+            this.mh03202.Name = "mh03202";
+            this.mh03202.Size = new System.Drawing.Size(14, 13);
+            this.mh03202.TabIndex = 82;
+            this.mh03202.TabStop = true;
+            this.mh03202.UseVisualStyleBackColor = true;
+            this.mh03202.CheckedChanged += new System.EventHandler(this.mh03202_CheckedChanged);
+            // 
+            // mh03201
+            // 
+            this.mh03201.AutoSize = true;
+            this.mh03201.Location = new System.Drawing.Point(3, 7);
+            this.mh03201.Name = "mh03201";
+            this.mh03201.Size = new System.Drawing.Size(14, 13);
+            this.mh03201.TabIndex = 81;
+            this.mh03201.TabStop = true;
+            this.mh03201.UseVisualStyleBackColor = true;
+            this.mh03201.CheckedChanged += new System.EventHandler(this.mh03201_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(448, 918);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 15);
+            this.label3.TabIndex = 362;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(683, 527);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 84);
+            this.label2.TabIndex = 361;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(673, 410);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 84);
+            this.label1.TabIndex = 360;
+            // 
+            // mhremarks
+            // 
+            this.mhremarks.BackColor = System.Drawing.Color.White;
+            this.mhremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mhremarks.ForeColor = System.Drawing.Color.Black;
+            this.mhremarks.Location = new System.Drawing.Point(226, 940);
+            this.mhremarks.Mask = resources.GetString("mhremarks.Mask");
+            this.mhremarks.Name = "mhremarks";
+            this.mhremarks.Size = new System.Drawing.Size(352, 20);
+            this.mhremarks.TabIndex = 359;
             // 
             // mh01104
             // 
@@ -1000,6 +1120,7 @@
             this.mh010a2.TabIndex = 13;
             this.mh010a2.TabStop = true;
             this.mh010a2.UseVisualStyleBackColor = true;
+            this.mh010a2.CheckedChanged += new System.EventHandler(this.mh010a2_CheckedChanged);
             // 
             // mh010a1
             // 
@@ -1010,14 +1131,15 @@
             this.mh010a1.TabIndex = 12;
             this.mh010a1.TabStop = true;
             this.mh010a1.UseVisualStyleBackColor = true;
+            this.mh010a1.CheckedChanged += new System.EventHandler(this.mh010a1_CheckedChanged);
             // 
             // chkVaccination
             // 
             this.chkVaccination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.chkVaccination.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkVaccination.Location = new System.Drawing.Point(587, 938);
+            this.chkVaccination.Location = new System.Drawing.Point(582, 941);
             this.chkVaccination.Name = "chkVaccination";
-            this.chkVaccination.Size = new System.Drawing.Size(159, 19);
+            this.chkVaccination.Size = new System.Drawing.Size(158, 19);
             this.chkVaccination.TabIndex = 349;
             this.chkVaccination.Text = "Vaccination not reported";
             this.chkVaccination.UseVisualStyleBackColor = false;
@@ -1482,23 +1604,12 @@
             // 
             this.mh027a2.AutoSize = true;
             this.mh027a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh027a2.Location = new System.Drawing.Point(421, 918);
+            this.mh027a2.Location = new System.Drawing.Point(434, 919);
             this.mh027a2.Name = "mh027a2";
             this.mh027a2.Size = new System.Drawing.Size(15, 14);
             this.mh027a2.TabIndex = 82;
             this.mh027a2.UseVisualStyleBackColor = true;
             this.mh027a2.CheckedChanged += new System.EventHandler(this.mh026013_CheckedChanged);
-            // 
-            // mh027b
-            // 
-            this.mh027b.AutoSize = true;
-            this.mh027b.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh027b.Location = new System.Drawing.Point(327, 726);
-            this.mh027b.Name = "mh027b";
-            this.mh027b.Size = new System.Drawing.Size(15, 14);
-            this.mh027b.TabIndex = 81;
-            this.mh027b.UseVisualStyleBackColor = true;
-            this.mh027b.CheckedChanged += new System.EventHandler(this.mh026012_CheckedChanged);
             // 
             // mh027a1
             // 
@@ -1709,24 +1820,13 @@
             this.mh015.TabIndex = 21;
             this.mh015.Leave += new System.EventHandler(this.mh015_Leave);
             // 
-            // mhremarks
-            // 
-            this.mhremarks.BackColor = System.Drawing.Color.White;
-            this.mhremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mhremarks.ForeColor = System.Drawing.Color.Black;
-            this.mhremarks.Location = new System.Drawing.Point(226, 940);
-            this.mhremarks.Mask = resources.GetString("mhremarks.Mask");
-            this.mhremarks.Name = "mhremarks";
-            this.mhremarks.Size = new System.Drawing.Size(352, 20);
-            this.mhremarks.TabIndex = 359;
-            // 
             // frmMSHIMG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 300);
-            this.ClientSize = new System.Drawing.Size(1170, 1045);
+            this.ClientSize = new System.Drawing.Size(1221, 1045);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1741,6 +1841,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1833,7 +1937,6 @@
         private System.Windows.Forms.RadioButton mh02202;
         private System.Windows.Forms.RadioButton mh02201;
         private System.Windows.Forms.CheckBox mh027a2;
-        private System.Windows.Forms.CheckBox mh027b;
         private System.Windows.Forms.CheckBox mh027a1;
         private System.Windows.Forms.CheckBox mh02606;
         private System.Windows.Forms.CheckBox mh02605;
@@ -1902,5 +2005,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mh01104;
         private System.Windows.Forms.MaskedTextBox mhremarks;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.RadioButton mh03202;
+        private System.Windows.Forms.RadioButton mh03201;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.RadioButton mh03302;
+        private System.Windows.Forms.RadioButton mh03301;
+        private System.Windows.Forms.Label label5;
     }
 }

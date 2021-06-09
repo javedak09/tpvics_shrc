@@ -117,10 +117,60 @@ namespace tpvics_shrc
 
             //dbupgrade();
 
+            //checkColumn("mh010a");
+
             getDistrict_Hardcoded();
 
             //getDistrict_FromSqliteDB();
         }
+
+
+
+        private bool checkColumn(string colName)
+        {
+            bool iserror = false;
+
+            try
+            {
+                CConnection cn = new CConnection();
+
+                SQLiteDataAdapter da = new SQLiteDataAdapter("select " + colName + " from camp_patient_dtl ", cn.cn);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                if (ds.Tables[0].Columns[colName].ToString() == "")
+                {
+                    //alterTableQuery_new(colName);
+                }
+
+                iserror = true;
+            }
+
+            catch (Exception ex)
+            {
+                alterTableQuery_new(colName);
+                iserror = false;
+            }
+
+            return iserror;
+        }
+
+
+
+
+
+        private void alterTableQuery_new(string colName)
+        {
+            CConnection cn = new CConnection();
+
+            cn.MConnOpen();
+
+            SQLiteCommand cmd = new SQLiteCommand("ALTER TABLE camp_patient_dtl add column " + colName + " TEXT ", cn.cn);
+            SQLiteDataReader dr = cmd.ExecuteReader();
+
+            cn.MConnClose();
+        }
+
 
         private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -230,7 +280,7 @@ namespace tpvics_shrc
             {
 
                 //var request = (HttpWebRequest)WebRequest.CreateHttp("https://vcoe1.aku.edu/naunehal/api/getdata.php");
-                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getTestingURL);
+                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL);
 
 
                 //request.UserAgent = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)";
@@ -312,7 +362,7 @@ namespace tpvics_shrc
             {
 
                 //var request = (HttpWebRequest)WebRequest.CreateHttp("https://vcoe1.aku.edu/naunehal/api/getdata.php");
-                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getTestingURL + CVariables.getDataFileName);
+                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL + CVariables.getDataFileName);
 
                 //request.UserAgent = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)";
 
@@ -397,7 +447,7 @@ namespace tpvics_shrc
             try
             {
                 //var request = (HttpWebRequest)WebRequest.CreateHttp("https://vcoe1.aku.edu/naunehal/api/getData.php");
-                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getTestingURL + CVariables.getDataFileName);
+                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL + CVariables.getDataFileName);
 
                 string dist_id = "";
 
@@ -457,6 +507,7 @@ namespace tpvics_shrc
                     string json = new JavaScriptSerializer().Serialize(new
                     {
                         table = "camps",
+                        check = "1",
                         filter = " camp_status = 'Conducted' AND execution_date <= '" + DateTime.Now.ToString("yyyy-MM-dd") + "' AND dist_id='" + ddlDistrict.SelectedValue.ToString() + "' AND locked=0 "
 
                     });
@@ -543,7 +594,7 @@ namespace tpvics_shrc
             try
             {
                 //var request = (HttpWebRequest)WebRequest.CreateHttp("https://vcoe1.aku.edu/naunehal/api/getData.php");
-                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getTestingURL + CVariables.getDataFileName);
+                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL + CVariables.getDataFileName);
 
 
                 //string param_json = "{\"table\":\"camp\", \"select\":\"idCamp\", \"iddoctor\", \"doctor_name\", \"check\":\"\" }";
@@ -871,7 +922,7 @@ namespace tpvics_shrc
 
 
                 //webRequest = (HttpWebRequest)WebRequest.Create("https://vcoe1.aku.edu/naunehal/api/sync.php");
-                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getTestingURL + CVariables.getSyncFileName);
+                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getServerURL + CVariables.getSyncFileName);
 
 
                 int winBuild = Environment.OSVersion.Version.Build;
@@ -1019,7 +1070,7 @@ namespace tpvics_shrc
 
 
                 //webRequest = (HttpWebRequest)WebRequest.Create("https://vcoe1.aku.edu/naunehal/api/sync.php");
-                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getTestingURL + CVariables.getSyncFileName);
+                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getServerURL + CVariables.getSyncFileName);
 
 
                 int winBuild = Environment.OSVersion.Version.Build;
