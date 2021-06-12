@@ -252,10 +252,16 @@ namespace tpvics_shrc
             {
                 Dictionary<string, string> comboSource = new Dictionary<string, string>();
                 comboSource.Add("Select District", "0");
-                comboSource.Add("Peshawar", "1");
-                comboSource.Add("Lakki Marwat", "2");
-                comboSource.Add("Quetta", "3");
-                comboSource.Add("Training District", "9");
+                comboSource.Add("Peshawar", "124");
+                comboSource.Add("District Korangi", "335");
+                comboSource.Add("Karachi East", "336");
+                comboSource.Add("Karachi West", "337");
+                comboSource.Add("Killa Abdullah", "411");
+                comboSource.Add("Pishin", "412");
+                comboSource.Add("Quetta", "413");
+                comboSource.Add("Lahore", "920");
+                comboSource.Add("Rawalpindi", "921");
+                comboSource.Add("Training Purpose", "925");
 
 
                 ddlDistrict.DataSource = new BindingSource(comboSource, null);
@@ -280,7 +286,7 @@ namespace tpvics_shrc
             {
 
                 //var request = (HttpWebRequest)WebRequest.CreateHttp("https://vcoe1.aku.edu/naunehal/api/getdata.php");
-                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL);
+                var request = (HttpWebRequest)WebRequest.CreateHttp(CVariables.getServerURL + CVariables.getDataFileName);
 
 
                 //request.UserAgent = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)";
@@ -1292,6 +1298,9 @@ namespace tpvics_shrc
                     fd.mh06 = ds.Tables[0].Rows[a]["mh06"].ToString();
                     fd.mh07 = ds.Tables[0].Rows[a]["mh07"].ToString();
                     fd.mh08 = ds.Tables[0].Rows[a]["mh08"].ToString();
+                    fd.mh08a = ds.Tables[0].Rows[a]["mh08a"].ToString();
+
+
                     fd.mh09y = ds.Tables[0].Rows[a]["mh09y"].ToString();
                     fd.mh09m = ds.Tables[0].Rows[a]["mh09m"].ToString();
                     fd.mh09d = ds.Tables[0].Rows[a]["mh09d"].ToString();
@@ -1407,9 +1416,13 @@ namespace tpvics_shrc
                     fd.mh030 = ds.Tables[0].Rows[a]["mh030"].ToString();
                     fd.mh031 = ds.Tables[0].Rows[a]["mh031"].ToString();
 
+                    fd.mh030a = ds.Tables[0].Rows[a]["mh030a"].ToString();
+
+
                     fd.mh01101 = ds.Tables[0].Rows[a]["mh01101"].ToString();
                     fd.mh01102 = ds.Tables[0].Rows[a]["mh01102"].ToString();
                     fd.mh01103 = ds.Tables[0].Rows[a]["mh01103"].ToString();
+                    fd.mh01104 = ds.Tables[0].Rows[a]["mh01104"].ToString();
 
 
                     fd.uccode = ds.Tables[0].Rows[a]["uccode"].ToString();
@@ -1512,6 +1525,7 @@ namespace tpvics_shrc
             public string mh06;
             public string mh07;
             public string mh08;
+            public string mh08a;
             public string mh09y;
             public string mh09m;
             public string mh09d;
@@ -1612,12 +1626,14 @@ namespace tpvics_shrc
             public string mh032;
 
             public string mh030;
+            public string mh030a;
             public string mh031;
 
 
             public string mh01101;
             public string mh01102;
             public string mh01103;
+            public string mh01104;
 
             public string mh027a;
             public string mh027b;

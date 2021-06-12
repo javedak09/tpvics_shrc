@@ -225,9 +225,9 @@ namespace tpvics_shrc
                 }
                 else if (e.Node.Name == "frm")
                 {
-                    //frmMSHIMG frm = new frmMSHIMG();
-                    //OpenForm(frm);
-                    //frm = null;
+                    frmMSHIMG frm = new frmMSHIMG();
+                    OpenForm(frm);
+                    frm = null;
                 }
 
                 //else if (e.Node.Name == "IFR")
@@ -309,7 +309,7 @@ namespace tpvics_shrc
 
 
                 //webRequest = (HttpWebRequest)WebRequest.Create("https://vcoe1.aku.edu/naunehal/api/sync.php");
-                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getTestingURL + CVariables.getSyncFileName);
+                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getServerURL + CVariables.getSyncFileName);
 
 
                 int winBuild = Environment.OSVersion.Version.Build;
@@ -457,7 +457,7 @@ namespace tpvics_shrc
 
 
                 //webRequest = (HttpWebRequest)WebRequest.Create("https://vcoe1.aku.edu/naunehal/api/sync.php");
-                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getTestingURL + CVariables.getSyncFileName);
+                webRequest = (HttpWebRequest)WebRequest.Create(CVariables.getServerURL + CVariables.getSyncFileName);
 
 
                 int winBuild = Environment.OSVersion.Version.Build;
@@ -731,6 +731,9 @@ namespace tpvics_shrc
                     fd.mh06 = ds.Tables[0].Rows[a]["mh06"].ToString();
                     fd.mh07 = ds.Tables[0].Rows[a]["mh07"].ToString();
                     fd.mh08 = ds.Tables[0].Rows[a]["mh08"].ToString();
+                    fd.mh08a = ds.Tables[0].Rows[a]["mh08a"].ToString();
+
+
                     fd.mh09y = ds.Tables[0].Rows[a]["mh09y"].ToString();
                     fd.mh09m = ds.Tables[0].Rows[a]["mh09m"].ToString();
                     fd.mh09d = ds.Tables[0].Rows[a]["mh09d"].ToString();
@@ -846,9 +849,14 @@ namespace tpvics_shrc
                     fd.mh030 = ds.Tables[0].Rows[a]["mh030"].ToString();
                     fd.mh031 = ds.Tables[0].Rows[a]["mh031"].ToString();
 
+
+                    fd.mh030a = ds.Tables[0].Rows[a]["mh030a"].ToString();
+
+
                     fd.mh01101 = ds.Tables[0].Rows[a]["mh01101"].ToString();
                     fd.mh01102 = ds.Tables[0].Rows[a]["mh01102"].ToString();
                     fd.mh01103 = ds.Tables[0].Rows[a]["mh01103"].ToString();
+                    fd.mh01104 = ds.Tables[0].Rows[a]["mh01104"].ToString();
 
 
                     fd.uccode = ds.Tables[0].Rows[a]["uccode"].ToString();
@@ -894,6 +902,7 @@ namespace tpvics_shrc
             public string mh06;
             public string mh07;
             public string mh08;
+            public string mh08a;
             public string mh09y;
             public string mh09m;
             public string mh09d;
@@ -994,12 +1003,14 @@ namespace tpvics_shrc
             public string mh032;
 
             public string mh030;
+            public string mh030a;
             public string mh031;
 
 
             public string mh01101;
             public string mh01102;
             public string mh01103;
+            public string mh01104;
 
             public string mh027a;
             public string mh027b;

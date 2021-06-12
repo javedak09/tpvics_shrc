@@ -83,6 +83,7 @@
             this.mh02101 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.mh08a = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.mh03302 = new System.Windows.Forms.RadioButton();
@@ -93,7 +94,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.mhremarks = new System.Windows.Forms.MaskedTextBox();
+            this.mh030a = new System.Windows.Forms.MaskedTextBox();
             this.mh01104 = new System.Windows.Forms.MaskedTextBox();
             this.mh014 = new System.Windows.Forms.ComboBox();
             this.mh013 = new System.Windows.Forms.ComboBox();
@@ -172,6 +173,21 @@
             this.mh02601 = new System.Windows.Forms.CheckBox();
             this.mh016 = new System.Windows.Forms.MaskedTextBox();
             this.mh015 = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.mh02209 = new System.Windows.Forms.RadioButton();
+            this.mh02309 = new System.Windows.Forms.RadioButton();
+            this.mh02409 = new System.Windows.Forms.RadioButton();
+            this.mh02509 = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.mh010b1 = new System.Windows.Forms.CheckBox();
+            this.mh010b2 = new System.Windows.Forms.CheckBox();
+            this.mh010b3 = new System.Windows.Forms.CheckBox();
+            this.mh010b77 = new System.Windows.Forms.CheckBox();
+            this.mh010b77x = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.mh010b9 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -196,7 +212,7 @@
             this.mh010.Location = new System.Drawing.Point(487, 172);
             this.mh010.Name = "mh010";
             this.mh010.Size = new System.Drawing.Size(231, 21);
-            this.mh010.TabIndex = 11;
+            this.mh010.TabIndex = 12;
             this.mh010.SelectedIndexChanged += new System.EventHandler(this.mh010_SelectedIndexChanged);
             this.mh010.Leave += new System.EventHandler(this.mh010_Leave);
             // 
@@ -208,7 +224,7 @@
             this.mh09d.Mask = "99";
             this.mh09d.Name = "mh09d";
             this.mh09d.Size = new System.Drawing.Size(27, 20);
-            this.mh09d.TabIndex = 10;
+            this.mh09d.TabIndex = 11;
             this.mh09d.Leave += new System.EventHandler(this.mh09d_Leave);
             // 
             // mh09m
@@ -219,7 +235,7 @@
             this.mh09m.Mask = "99";
             this.mh09m.Name = "mh09m";
             this.mh09m.Size = new System.Drawing.Size(27, 20);
-            this.mh09m.TabIndex = 9;
+            this.mh09m.TabIndex = 10;
             this.mh09m.Leave += new System.EventHandler(this.mh09m_Leave);
             // 
             // mh09y
@@ -230,7 +246,7 @@
             this.mh09y.Mask = "99";
             this.mh09y.Name = "mh09y";
             this.mh09y.Size = new System.Drawing.Size(30, 20);
-            this.mh09y.TabIndex = 8;
+            this.mh09y.TabIndex = 9;
             this.mh09y.Leave += new System.EventHandler(this.mh09y_Leave);
             // 
             // mh08
@@ -275,7 +291,7 @@
             this.mh02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mh02.ForeColor = System.Drawing.Color.Black;
             this.mh02.Location = new System.Drawing.Point(442, 64);
-            this.mh02.Mask = "999-9999-9";
+            this.mh02.Mask = "9999-9";
             this.mh02.Name = "mh02";
             this.mh02.Size = new System.Drawing.Size(148, 20);
             this.mh02.TabIndex = 0;
@@ -298,7 +314,7 @@
             // cmdSave
             // 
             this.cmdSave.CausesValidation = false;
-            this.cmdSave.Location = new System.Drawing.Point(751, 74);
+            this.cmdSave.Location = new System.Drawing.Point(748, 6);
             this.cmdSave.Name = "cmdSave";
             this.cmdSave.Size = new System.Drawing.Size(109, 40);
             this.cmdSave.TabIndex = 95;
@@ -314,7 +330,7 @@
             this.mh012.Mask = "999.9";
             this.mh012.Name = "mh012";
             this.mh012.Size = new System.Drawing.Size(90, 20);
-            this.mh012.TabIndex = 17;
+            this.mh012.TabIndex = 19;
             this.mh012.Leave += new System.EventHandler(this.mh012_Leave);
             // 
             // mh017077
@@ -761,13 +777,26 @@
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage1.Controls.Add(this.mh010b9);
+            this.tabPage1.Controls.Add(this.label10);
+            this.tabPage1.Controls.Add(this.mh010b77x);
+            this.tabPage1.Controls.Add(this.mh010b77);
+            this.tabPage1.Controls.Add(this.mh010b3);
+            this.tabPage1.Controls.Add(this.mh010b2);
+            this.tabPage1.Controls.Add(this.mh010b1);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.mh08a);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.panel13);
             this.tabPage1.Controls.Add(this.panel12);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.mhremarks);
+            this.tabPage1.Controls.Add(this.mh030a);
             this.tabPage1.Controls.Add(this.mh01104);
             this.tabPage1.Controls.Add(this.mh014);
             this.tabPage1.Controls.Add(this.mh013);
@@ -791,7 +820,6 @@
             this.tabPage1.Controls.Add(this.panel5);
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel3);
-            this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.chkMUAC);
             this.tabPage1.Controls.Add(this.chkHeight);
@@ -882,6 +910,21 @@
             this.tabPage1.Size = new System.Drawing.Size(862, 1039);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // mh08a
+            // 
+            this.mh08a.BackColor = System.Drawing.Color.White;
+            this.mh08a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mh08a.ForeColor = System.Drawing.Color.Black;
+            this.mh08a.Location = new System.Drawing.Point(233, 156);
+            this.mh08a.Mask = ">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" +
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" +
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+            this.mh08a.Name = "mh08a";
+            this.mh08a.Size = new System.Drawing.Size(506, 20);
+            this.mh08a.TabIndex = 8;
+            this.mh08a.Visible = false;
+            this.mh08a.Leave += new System.EventHandler(this.mh08a_Leave);
             // 
             // label5
             // 
@@ -977,16 +1020,17 @@
             this.label1.Size = new System.Drawing.Size(31, 84);
             this.label1.TabIndex = 360;
             // 
-            // mhremarks
+            // mh030a
             // 
-            this.mhremarks.BackColor = System.Drawing.Color.White;
-            this.mhremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mhremarks.ForeColor = System.Drawing.Color.Black;
-            this.mhremarks.Location = new System.Drawing.Point(226, 940);
-            this.mhremarks.Mask = resources.GetString("mhremarks.Mask");
-            this.mhremarks.Name = "mhremarks";
-            this.mhremarks.Size = new System.Drawing.Size(352, 20);
-            this.mhremarks.TabIndex = 359;
+            this.mh030a.BackColor = System.Drawing.Color.White;
+            this.mh030a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mh030a.ForeColor = System.Drawing.Color.Black;
+            this.mh030a.Location = new System.Drawing.Point(226, 940);
+            this.mh030a.Mask = resources.GetString("mh030a.Mask");
+            this.mh030a.Name = "mh030a";
+            this.mh030a.Size = new System.Drawing.Size(352, 20);
+            this.mh030a.TabIndex = 359;
+            this.mh030a.Leave += new System.EventHandler(this.mh030a_Leave);
             // 
             // mh01104
             // 
@@ -997,7 +1041,7 @@
             this.mh01104.Mask = resources.GetString("mh01104.Mask");
             this.mh01104.Name = "mh01104";
             this.mh01104.Size = new System.Drawing.Size(310, 20);
-            this.mh01104.TabIndex = 358;
+            this.mh01104.TabIndex = 18;
             // 
             // mh014
             // 
@@ -1006,7 +1050,8 @@
             this.mh014.Location = new System.Drawing.Point(226, 338);
             this.mh014.Name = "mh014";
             this.mh014.Size = new System.Drawing.Size(172, 21);
-            this.mh014.TabIndex = 20;
+            this.mh014.TabIndex = 26;
+            this.mh014.Visible = false;
             this.mh014.Leave += new System.EventHandler(this.mh014_Leave);
             // 
             // mh013
@@ -1016,7 +1061,8 @@
             this.mh013.Location = new System.Drawing.Point(226, 316);
             this.mh013.Name = "mh013";
             this.mh013.Size = new System.Drawing.Size(172, 21);
-            this.mh013.TabIndex = 19;
+            this.mh013.TabIndex = 23;
+            this.mh013.Visible = false;
             this.mh013.Leave += new System.EventHandler(this.mh013_Leave);
             // 
             // label4
@@ -1117,7 +1163,7 @@
             this.mh010a2.Location = new System.Drawing.Point(104, 3);
             this.mh010a2.Name = "mh010a2";
             this.mh010a2.Size = new System.Drawing.Size(14, 13);
-            this.mh010a2.TabIndex = 13;
+            this.mh010a2.TabIndex = 14;
             this.mh010a2.TabStop = true;
             this.mh010a2.UseVisualStyleBackColor = true;
             this.mh010a2.CheckedChanged += new System.EventHandler(this.mh010a2_CheckedChanged);
@@ -1128,7 +1174,7 @@
             this.mh010a1.Location = new System.Drawing.Point(14, 3);
             this.mh010a1.Name = "mh010a1";
             this.mh010a1.Size = new System.Drawing.Size(14, 13);
-            this.mh010a1.TabIndex = 12;
+            this.mh010a1.TabIndex = 13;
             this.mh010a1.TabStop = true;
             this.mh010a1.UseVisualStyleBackColor = true;
             this.mh010a1.CheckedChanged += new System.EventHandler(this.mh010a1_CheckedChanged);
@@ -1192,7 +1238,7 @@
             this.mh01103.Mask = resources.GetString("mh01103.Mask");
             this.mh01103.Name = "mh01103";
             this.mh01103.Size = new System.Drawing.Size(254, 20);
-            this.mh01103.TabIndex = 16;
+            this.mh01103.TabIndex = 17;
             // 
             // mh01102
             // 
@@ -1203,7 +1249,7 @@
             this.mh01102.Mask = resources.GetString("mh01102.Mask");
             this.mh01102.Name = "mh01102";
             this.mh01102.Size = new System.Drawing.Size(310, 20);
-            this.mh01102.TabIndex = 15;
+            this.mh01102.TabIndex = 16;
             // 
             // mh01101
             // 
@@ -1214,12 +1260,12 @@
             this.mh01101.Mask = resources.GetString("mh01101.Mask");
             this.mh01101.Name = "mh01101";
             this.mh01101.Size = new System.Drawing.Size(254, 20);
-            this.mh01101.TabIndex = 14;
+            this.mh01101.TabIndex = 15;
             this.mh01101.Leave += new System.EventHandler(this.mh01101_Leave);
             // 
             // cmdMainMenu
             // 
-            this.cmdMainMenu.Location = new System.Drawing.Point(751, 161);
+            this.cmdMainMenu.Location = new System.Drawing.Point(748, 93);
             this.cmdMainMenu.Name = "cmdMainMenu";
             this.cmdMainMenu.Size = new System.Drawing.Size(109, 40);
             this.cmdMainMenu.TabIndex = 97;
@@ -1258,7 +1304,7 @@
             // 
             // cmdNewID
             // 
-            this.cmdNewID.Location = new System.Drawing.Point(751, 118);
+            this.cmdNewID.Location = new System.Drawing.Point(748, 50);
             this.cmdNewID.Name = "cmdNewID";
             this.cmdNewID.Size = new System.Drawing.Size(109, 41);
             this.cmdNewID.TabIndex = 96;
@@ -1299,11 +1345,12 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.mh02509);
             this.panel6.Controls.Add(this.mh02502);
             this.panel6.Controls.Add(this.mh02501);
             this.panel6.Location = new System.Drawing.Point(636, 686);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(94, 24);
+            this.panel6.Size = new System.Drawing.Size(129, 24);
             this.panel6.TabIndex = 339;
             // 
             // mh02502
@@ -1329,11 +1376,12 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.mh02309);
             this.panel5.Controls.Add(this.mh02302);
             this.panel5.Controls.Add(this.mh02301);
             this.panel5.Location = new System.Drawing.Point(636, 664);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(97, 27);
+            this.panel5.Size = new System.Drawing.Size(129, 27);
             this.panel5.TabIndex = 338;
             // 
             // mh02302
@@ -1378,11 +1426,12 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.mh02409);
             this.panel3.Controls.Add(this.mh02402);
             this.panel3.Controls.Add(this.mh02401);
             this.panel3.Location = new System.Drawing.Point(340, 688);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(72, 21);
+            this.panel3.Size = new System.Drawing.Size(116, 21);
             this.panel3.TabIndex = 336;
             // 
             // mh02402
@@ -1408,11 +1457,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.mh02209);
             this.panel2.Controls.Add(this.mh02202);
             this.panel2.Controls.Add(this.mh02201);
-            this.panel2.Location = new System.Drawing.Point(341, 665);
+            this.panel2.Location = new System.Drawing.Point(340, 665);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(71, 24);
+            this.panel2.Size = new System.Drawing.Size(116, 23);
             this.panel2.TabIndex = 335;
             // 
             // mh02202
@@ -1472,7 +1522,7 @@
             this.chkMUAC.Location = new System.Drawing.Point(643, 322);
             this.chkMUAC.Name = "chkMUAC";
             this.chkMUAC.Size = new System.Drawing.Size(15, 14);
-            this.chkMUAC.TabIndex = 24;
+            this.chkMUAC.TabIndex = 25;
             this.chkMUAC.UseVisualStyleBackColor = true;
             this.chkMUAC.CheckedChanged += new System.EventHandler(this.chkMUAC_CheckedChanged);
             // 
@@ -1516,7 +1566,7 @@
             this.chkWeight.Location = new System.Drawing.Point(351, 297);
             this.chkWeight.Name = "chkWeight";
             this.chkWeight.Size = new System.Drawing.Size(15, 14);
-            this.chkWeight.TabIndex = 18;
+            this.chkWeight.TabIndex = 20;
             this.chkWeight.UseVisualStyleBackColor = true;
             this.chkWeight.CheckedChanged += new System.EventHandler(this.chkWeight_CheckedChanged);
             // 
@@ -1528,6 +1578,7 @@
             this.mh06.Name = "mh06";
             this.mh06.Size = new System.Drawing.Size(268, 21);
             this.mh06.TabIndex = 5;
+            this.mh06.Visible = false;
             this.mh06.Leave += new System.EventHandler(this.mh06_Leave);
             // 
             // mh04
@@ -1558,7 +1609,7 @@
             // 
             this.chkPW.AutoSize = true;
             this.chkPW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPW.Location = new System.Drawing.Point(774, 293);
+            this.chkPW.Location = new System.Drawing.Point(774, 425);
             this.chkPW.Name = "chkPW";
             this.chkPW.Size = new System.Drawing.Size(82, 19);
             this.chkPW.TabIndex = 98;
@@ -1806,7 +1857,7 @@
             this.mh016.Mask = "99.99";
             this.mh016.Name = "mh016";
             this.mh016.Size = new System.Drawing.Size(109, 20);
-            this.mh016.TabIndex = 23;
+            this.mh016.TabIndex = 24;
             this.mh016.Leave += new System.EventHandler(this.mh016_Leave);
             // 
             // mh015
@@ -1820,13 +1871,173 @@
             this.mh015.TabIndex = 21;
             this.mh015.Leave += new System.EventHandler(this.mh015_Leave);
             // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(396, 114);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 19);
+            this.label6.TabIndex = 365;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(149, 317);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 19);
+            this.label7.TabIndex = 366;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(149, 341);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.TabIndex = 367;
+            // 
+            // mh02209
+            // 
+            this.mh02209.AutoSize = true;
+            this.mh02209.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02209.Location = new System.Drawing.Point(69, 6);
+            this.mh02209.Name = "mh02209";
+            this.mh02209.Size = new System.Drawing.Size(43, 17);
+            this.mh02209.TabIndex = 75;
+            this.mh02209.TabStop = true;
+            this.mh02209.Text = "NR";
+            this.mh02209.UseVisualStyleBackColor = true;
+            // 
+            // mh02309
+            // 
+            this.mh02309.AutoSize = true;
+            this.mh02309.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02309.Location = new System.Drawing.Point(83, 7);
+            this.mh02309.Name = "mh02309";
+            this.mh02309.Size = new System.Drawing.Size(43, 17);
+            this.mh02309.TabIndex = 77;
+            this.mh02309.TabStop = true;
+            this.mh02309.Text = "NR";
+            this.mh02309.UseVisualStyleBackColor = true;
+            // 
+            // mh02409
+            // 
+            this.mh02409.AutoSize = true;
+            this.mh02409.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02409.Location = new System.Drawing.Point(69, 0);
+            this.mh02409.Name = "mh02409";
+            this.mh02409.Size = new System.Drawing.Size(43, 17);
+            this.mh02409.TabIndex = 79;
+            this.mh02409.TabStop = true;
+            this.mh02409.Text = "NR";
+            this.mh02409.UseVisualStyleBackColor = true;
+            // 
+            // mh02509
+            // 
+            this.mh02509.AutoSize = true;
+            this.mh02509.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02509.Location = new System.Drawing.Point(83, 3);
+            this.mh02509.Name = "mh02509";
+            this.mh02509.Size = new System.Drawing.Size(43, 17);
+            this.mh02509.TabIndex = 81;
+            this.mh02509.TabStop = true;
+            this.mh02509.Text = "NR";
+            this.mh02509.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(741, 156);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 19);
+            this.label9.TabIndex = 368;
+            this.label9.Text = "Referred By";
+            // 
+            // mh010b1
+            // 
+            this.mh010b1.AutoSize = true;
+            this.mh010b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b1.Location = new System.Drawing.Point(744, 172);
+            this.mh010b1.Name = "mh010b1";
+            this.mh010b1.Size = new System.Drawing.Size(84, 19);
+            this.mh010b1.TabIndex = 369;
+            this.mh010b1.Text = "CHW/LHW";
+            this.mh010b1.UseVisualStyleBackColor = true;
+            this.mh010b1.CheckedChanged += new System.EventHandler(this.mh010b1_CheckedChanged);
+            // 
+            // mh010b2
+            // 
+            this.mh010b2.AutoSize = true;
+            this.mh010b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b2.Location = new System.Drawing.Point(744, 192);
+            this.mh010b2.Name = "mh010b2";
+            this.mh010b2.Size = new System.Drawing.Size(120, 19);
+            this.mh010b2.TabIndex = 370;
+            this.mh010b2.Text = "Social Mobilizers";
+            this.mh010b2.UseVisualStyleBackColor = true;
+            this.mh010b2.CheckedChanged += new System.EventHandler(this.mh010b2_CheckedChanged);
+            // 
+            // mh010b3
+            // 
+            this.mh010b3.AutoSize = true;
+            this.mh010b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b3.Location = new System.Drawing.Point(744, 211);
+            this.mh010b3.Name = "mh010b3";
+            this.mh010b3.Size = new System.Drawing.Size(89, 19);
+            this.mh010b3.TabIndex = 371;
+            this.mh010b3.Text = "Polio Team";
+            this.mh010b3.UseVisualStyleBackColor = true;
+            this.mh010b3.CheckedChanged += new System.EventHandler(this.mh010b3_CheckedChanged);
+            // 
+            // mh010b77
+            // 
+            this.mh010b77.AutoSize = true;
+            this.mh010b77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b77.Location = new System.Drawing.Point(744, 246);
+            this.mh010b77.Name = "mh010b77";
+            this.mh010b77.Size = new System.Drawing.Size(62, 19);
+            this.mh010b77.TabIndex = 372;
+            this.mh010b77.Text = "Others";
+            this.mh010b77.UseVisualStyleBackColor = true;
+            this.mh010b77.CheckedChanged += new System.EventHandler(this.mh010b77_CheckedChanged);
+            // 
+            // mh010b77x
+            // 
+            this.mh010b77x.BackColor = System.Drawing.Color.Silver;
+            this.mh010b77x.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mh010b77x.Enabled = false;
+            this.mh010b77x.Location = new System.Drawing.Point(744, 267);
+            this.mh010b77x.Mask = ">??????????????????????????????????????????????????";
+            this.mh010b77x.Name = "mh010b77x";
+            this.mh010b77x.Size = new System.Drawing.Size(118, 20);
+            this.mh010b77x.TabIndex = 373;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(146, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(83, 19);
+            this.label10.TabIndex = 374;
+            // 
+            // mh010b9
+            // 
+            this.mh010b9.AutoSize = true;
+            this.mh010b9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b9.Location = new System.Drawing.Point(744, 228);
+            this.mh010b9.Name = "mh010b9";
+            this.mh010b9.Size = new System.Drawing.Size(44, 19);
+            this.mh010b9.TabIndex = 375;
+            this.mh010b9.Text = "NR";
+            this.mh010b9.UseVisualStyleBackColor = true;
+            this.mh010b9.CheckedChanged += new System.EventHandler(this.mh010b9_CheckedChanged);
+            // 
             // frmMSHIMG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 300);
-            this.ClientSize = new System.Drawing.Size(1221, 1045);
+            this.ClientSize = new System.Drawing.Size(1255, 1045);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2004,7 +2215,7 @@
         private System.Windows.Forms.RadioButton mh03101;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mh01104;
-        private System.Windows.Forms.MaskedTextBox mhremarks;
+        private System.Windows.Forms.MaskedTextBox mh030a;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -2015,5 +2226,21 @@
         private System.Windows.Forms.RadioButton mh03302;
         private System.Windows.Forms.RadioButton mh03301;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MaskedTextBox mh08a;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton mh02209;
+        private System.Windows.Forms.RadioButton mh02309;
+        private System.Windows.Forms.RadioButton mh02409;
+        private System.Windows.Forms.RadioButton mh02509;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox mh010b2;
+        private System.Windows.Forms.CheckBox mh010b1;
+        private System.Windows.Forms.CheckBox mh010b3;
+        private System.Windows.Forms.CheckBox mh010b77;
+        private System.Windows.Forms.MaskedTextBox mh010b77x;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox mh010b9;
     }
 }
