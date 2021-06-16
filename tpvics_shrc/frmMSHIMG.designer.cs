@@ -83,6 +83,25 @@
             this.mh02101 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.mh026022 = new System.Windows.Forms.CheckBox();
+            this.mh026021 = new System.Windows.Forms.CheckBox();
+            this.mh026020 = new System.Windows.Forms.CheckBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.mh010b9 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.mh010b77x = new System.Windows.Forms.MaskedTextBox();
+            this.mh010b77 = new System.Windows.Forms.CheckBox();
+            this.mh010b3 = new System.Windows.Forms.CheckBox();
+            this.mh010b2 = new System.Windows.Forms.CheckBox();
+            this.mh010b1 = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.mh02209 = new System.Windows.Forms.RadioButton();
+            this.mh02202 = new System.Windows.Forms.RadioButton();
+            this.mh02201 = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.mh08a = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -125,19 +144,19 @@
             this.mh02902 = new System.Windows.Forms.RadioButton();
             this.mh02901 = new System.Windows.Forms.RadioButton();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.mh02509 = new System.Windows.Forms.RadioButton();
             this.mh02502 = new System.Windows.Forms.RadioButton();
             this.mh02501 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.mh02309 = new System.Windows.Forms.RadioButton();
             this.mh02302 = new System.Windows.Forms.RadioButton();
             this.mh02301 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.mh02102 = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.mh02409 = new System.Windows.Forms.RadioButton();
             this.mh02402 = new System.Windows.Forms.RadioButton();
             this.mh02401 = new System.Windows.Forms.RadioButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mh02202 = new System.Windows.Forms.RadioButton();
-            this.mh02201 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mh02001 = new System.Windows.Forms.RadioButton();
             this.mh02002 = new System.Windows.Forms.RadioButton();
@@ -173,23 +192,9 @@
             this.mh02601 = new System.Windows.Forms.CheckBox();
             this.mh016 = new System.Windows.Forms.MaskedTextBox();
             this.mh015 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.mh02209 = new System.Windows.Forms.RadioButton();
-            this.mh02309 = new System.Windows.Forms.RadioButton();
-            this.mh02409 = new System.Windows.Forms.RadioButton();
-            this.mh02509 = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.mh010b1 = new System.Windows.Forms.CheckBox();
-            this.mh010b2 = new System.Windows.Forms.CheckBox();
-            this.mh010b3 = new System.Windows.Forms.CheckBox();
-            this.mh010b77 = new System.Windows.Forms.CheckBox();
-            this.mh010b77x = new System.Windows.Forms.MaskedTextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.mh010b9 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -201,7 +206,6 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -777,6 +781,10 @@
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage1.Controls.Add(this.mh026022);
+            this.tabPage1.Controls.Add(this.mh026021);
+            this.tabPage1.Controls.Add(this.mh026020);
+            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.mh010b9);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.mh010b77x);
@@ -910,6 +918,199 @@
             this.tabPage1.Size = new System.Drawing.Size(862, 1039);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // mh026022
+            // 
+            this.mh026022.AutoSize = true;
+            this.mh026022.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh026022.Location = new System.Drawing.Point(197, 870);
+            this.mh026022.Name = "mh026022";
+            this.mh026022.Size = new System.Drawing.Size(15, 14);
+            this.mh026022.TabIndex = 379;
+            this.mh026022.UseVisualStyleBackColor = true;
+            // 
+            // mh026021
+            // 
+            this.mh026021.AutoSize = true;
+            this.mh026021.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh026021.Location = new System.Drawing.Point(575, 850);
+            this.mh026021.Name = "mh026021";
+            this.mh026021.Size = new System.Drawing.Size(15, 14);
+            this.mh026021.TabIndex = 378;
+            this.mh026021.UseVisualStyleBackColor = true;
+            // 
+            // mh026020
+            // 
+            this.mh026020.AutoSize = true;
+            this.mh026020.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh026020.Location = new System.Drawing.Point(575, 869);
+            this.mh026020.Name = "mh026020";
+            this.mh026020.Size = new System.Drawing.Size(15, 14);
+            this.mh026020.TabIndex = 377;
+            this.mh026020.UseVisualStyleBackColor = true;
+            this.mh026020.CheckedChanged += new System.EventHandler(this.mh026020_CheckedChanged);
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(233, 758);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(13, 14);
+            this.label11.TabIndex = 376;
+            // 
+            // mh010b9
+            // 
+            this.mh010b9.AutoSize = true;
+            this.mh010b9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b9.Location = new System.Drawing.Point(744, 228);
+            this.mh010b9.Name = "mh010b9";
+            this.mh010b9.Size = new System.Drawing.Size(44, 19);
+            this.mh010b9.TabIndex = 375;
+            this.mh010b9.Text = "NR";
+            this.mh010b9.UseVisualStyleBackColor = true;
+            this.mh010b9.CheckedChanged += new System.EventHandler(this.mh010b9_CheckedChanged);
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(146, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(83, 19);
+            this.label10.TabIndex = 374;
+            // 
+            // mh010b77x
+            // 
+            this.mh010b77x.BackColor = System.Drawing.Color.Silver;
+            this.mh010b77x.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mh010b77x.Enabled = false;
+            this.mh010b77x.Location = new System.Drawing.Point(744, 267);
+            this.mh010b77x.Mask = ">??????????????????????????????????????????????????";
+            this.mh010b77x.Name = "mh010b77x";
+            this.mh010b77x.Size = new System.Drawing.Size(118, 20);
+            this.mh010b77x.TabIndex = 373;
+            // 
+            // mh010b77
+            // 
+            this.mh010b77.AutoSize = true;
+            this.mh010b77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b77.Location = new System.Drawing.Point(744, 246);
+            this.mh010b77.Name = "mh010b77";
+            this.mh010b77.Size = new System.Drawing.Size(62, 19);
+            this.mh010b77.TabIndex = 372;
+            this.mh010b77.Text = "Others";
+            this.mh010b77.UseVisualStyleBackColor = true;
+            this.mh010b77.CheckedChanged += new System.EventHandler(this.mh010b77_CheckedChanged);
+            // 
+            // mh010b3
+            // 
+            this.mh010b3.AutoSize = true;
+            this.mh010b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b3.Location = new System.Drawing.Point(744, 211);
+            this.mh010b3.Name = "mh010b3";
+            this.mh010b3.Size = new System.Drawing.Size(89, 19);
+            this.mh010b3.TabIndex = 371;
+            this.mh010b3.Text = "Polio Team";
+            this.mh010b3.UseVisualStyleBackColor = true;
+            this.mh010b3.CheckedChanged += new System.EventHandler(this.mh010b3_CheckedChanged);
+            // 
+            // mh010b2
+            // 
+            this.mh010b2.AutoSize = true;
+            this.mh010b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b2.Location = new System.Drawing.Point(744, 192);
+            this.mh010b2.Name = "mh010b2";
+            this.mh010b2.Size = new System.Drawing.Size(120, 19);
+            this.mh010b2.TabIndex = 370;
+            this.mh010b2.Text = "Social Mobilizers";
+            this.mh010b2.UseVisualStyleBackColor = true;
+            this.mh010b2.CheckedChanged += new System.EventHandler(this.mh010b2_CheckedChanged);
+            // 
+            // mh010b1
+            // 
+            this.mh010b1.AutoSize = true;
+            this.mh010b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh010b1.Location = new System.Drawing.Point(744, 172);
+            this.mh010b1.Name = "mh010b1";
+            this.mh010b1.Size = new System.Drawing.Size(84, 19);
+            this.mh010b1.TabIndex = 369;
+            this.mh010b1.Text = "CHW/LHW";
+            this.mh010b1.UseVisualStyleBackColor = true;
+            this.mh010b1.CheckedChanged += new System.EventHandler(this.mh010b1_CheckedChanged);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(741, 156);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 19);
+            this.label9.TabIndex = 368;
+            this.label9.Text = "Referred By";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.mh02209);
+            this.panel2.Controls.Add(this.mh02202);
+            this.panel2.Controls.Add(this.mh02201);
+            this.panel2.Location = new System.Drawing.Point(295, 665);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(116, 23);
+            this.panel2.TabIndex = 335;
+            // 
+            // mh02209
+            // 
+            this.mh02209.AutoSize = true;
+            this.mh02209.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02209.Location = new System.Drawing.Point(80, 8);
+            this.mh02209.Name = "mh02209";
+            this.mh02209.Size = new System.Drawing.Size(14, 13);
+            this.mh02209.TabIndex = 75;
+            this.mh02209.TabStop = true;
+            this.mh02209.UseVisualStyleBackColor = true;
+            // 
+            // mh02202
+            // 
+            this.mh02202.AutoSize = true;
+            this.mh02202.Location = new System.Drawing.Point(42, 8);
+            this.mh02202.Name = "mh02202";
+            this.mh02202.Size = new System.Drawing.Size(14, 13);
+            this.mh02202.TabIndex = 74;
+            this.mh02202.TabStop = true;
+            this.mh02202.UseVisualStyleBackColor = true;
+            this.mh02202.CheckedChanged += new System.EventHandler(this.mh02202_CheckedChanged);
+            // 
+            // mh02201
+            // 
+            this.mh02201.AutoSize = true;
+            this.mh02201.Location = new System.Drawing.Point(5, 8);
+            this.mh02201.Name = "mh02201";
+            this.mh02201.Size = new System.Drawing.Size(14, 13);
+            this.mh02201.TabIndex = 73;
+            this.mh02201.TabStop = true;
+            this.mh02201.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(149, 341);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.TabIndex = 367;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(149, 317);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 19);
+            this.label7.TabIndex = 366;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(396, 114);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 19);
+            this.label6.TabIndex = 365;
             // 
             // mh08a
             // 
@@ -1348,10 +1549,21 @@
             this.panel6.Controls.Add(this.mh02509);
             this.panel6.Controls.Add(this.mh02502);
             this.panel6.Controls.Add(this.mh02501);
-            this.panel6.Location = new System.Drawing.Point(636, 686);
+            this.panel6.Location = new System.Drawing.Point(608, 686);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(129, 24);
             this.panel6.TabIndex = 339;
+            // 
+            // mh02509
+            // 
+            this.mh02509.AutoSize = true;
+            this.mh02509.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02509.Location = new System.Drawing.Point(91, 5);
+            this.mh02509.Name = "mh02509";
+            this.mh02509.Size = new System.Drawing.Size(14, 13);
+            this.mh02509.TabIndex = 81;
+            this.mh02509.TabStop = true;
+            this.mh02509.UseVisualStyleBackColor = true;
             // 
             // mh02502
             // 
@@ -1379,10 +1591,21 @@
             this.panel5.Controls.Add(this.mh02309);
             this.panel5.Controls.Add(this.mh02302);
             this.panel5.Controls.Add(this.mh02301);
-            this.panel5.Location = new System.Drawing.Point(636, 664);
+            this.panel5.Location = new System.Drawing.Point(608, 664);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(129, 27);
             this.panel5.TabIndex = 338;
+            // 
+            // mh02309
+            // 
+            this.mh02309.AutoSize = true;
+            this.mh02309.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02309.Location = new System.Drawing.Point(89, 10);
+            this.mh02309.Name = "mh02309";
+            this.mh02309.Size = new System.Drawing.Size(14, 13);
+            this.mh02309.TabIndex = 77;
+            this.mh02309.TabStop = true;
+            this.mh02309.UseVisualStyleBackColor = true;
             // 
             // mh02302
             // 
@@ -1429,10 +1652,21 @@
             this.panel3.Controls.Add(this.mh02409);
             this.panel3.Controls.Add(this.mh02402);
             this.panel3.Controls.Add(this.mh02401);
-            this.panel3.Location = new System.Drawing.Point(340, 688);
+            this.panel3.Location = new System.Drawing.Point(295, 688);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(116, 21);
             this.panel3.TabIndex = 336;
+            // 
+            // mh02409
+            // 
+            this.mh02409.AutoSize = true;
+            this.mh02409.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mh02409.Location = new System.Drawing.Point(81, 2);
+            this.mh02409.Name = "mh02409";
+            this.mh02409.Size = new System.Drawing.Size(14, 13);
+            this.mh02409.TabIndex = 79;
+            this.mh02409.TabStop = true;
+            this.mh02409.UseVisualStyleBackColor = true;
             // 
             // mh02402
             // 
@@ -1454,37 +1688,6 @@
             this.mh02401.TabStop = true;
             this.mh02401.UseVisualStyleBackColor = true;
             this.mh02401.CheckedChanged += new System.EventHandler(this.mh02401_CheckedChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.mh02209);
-            this.panel2.Controls.Add(this.mh02202);
-            this.panel2.Controls.Add(this.mh02201);
-            this.panel2.Location = new System.Drawing.Point(340, 665);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(116, 23);
-            this.panel2.TabIndex = 335;
-            // 
-            // mh02202
-            // 
-            this.mh02202.AutoSize = true;
-            this.mh02202.Location = new System.Drawing.Point(42, 8);
-            this.mh02202.Name = "mh02202";
-            this.mh02202.Size = new System.Drawing.Size(14, 13);
-            this.mh02202.TabIndex = 74;
-            this.mh02202.TabStop = true;
-            this.mh02202.UseVisualStyleBackColor = true;
-            this.mh02202.CheckedChanged += new System.EventHandler(this.mh02202_CheckedChanged);
-            // 
-            // mh02201
-            // 
-            this.mh02201.AutoSize = true;
-            this.mh02201.Location = new System.Drawing.Point(5, 8);
-            this.mh02201.Name = "mh02201";
-            this.mh02201.Size = new System.Drawing.Size(14, 13);
-            this.mh02201.TabIndex = 73;
-            this.mh02201.TabStop = true;
-            this.mh02201.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -1871,173 +2074,13 @@
             this.mh015.TabIndex = 21;
             this.mh015.Leave += new System.EventHandler(this.mh015_Leave);
             // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(396, 114);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 19);
-            this.label6.TabIndex = 365;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(149, 317);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 19);
-            this.label7.TabIndex = 366;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(149, 341);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 17);
-            this.label8.TabIndex = 367;
-            // 
-            // mh02209
-            // 
-            this.mh02209.AutoSize = true;
-            this.mh02209.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh02209.Location = new System.Drawing.Point(69, 6);
-            this.mh02209.Name = "mh02209";
-            this.mh02209.Size = new System.Drawing.Size(43, 17);
-            this.mh02209.TabIndex = 75;
-            this.mh02209.TabStop = true;
-            this.mh02209.Text = "NR";
-            this.mh02209.UseVisualStyleBackColor = true;
-            // 
-            // mh02309
-            // 
-            this.mh02309.AutoSize = true;
-            this.mh02309.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh02309.Location = new System.Drawing.Point(83, 7);
-            this.mh02309.Name = "mh02309";
-            this.mh02309.Size = new System.Drawing.Size(43, 17);
-            this.mh02309.TabIndex = 77;
-            this.mh02309.TabStop = true;
-            this.mh02309.Text = "NR";
-            this.mh02309.UseVisualStyleBackColor = true;
-            // 
-            // mh02409
-            // 
-            this.mh02409.AutoSize = true;
-            this.mh02409.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh02409.Location = new System.Drawing.Point(69, 0);
-            this.mh02409.Name = "mh02409";
-            this.mh02409.Size = new System.Drawing.Size(43, 17);
-            this.mh02409.TabIndex = 79;
-            this.mh02409.TabStop = true;
-            this.mh02409.Text = "NR";
-            this.mh02409.UseVisualStyleBackColor = true;
-            // 
-            // mh02509
-            // 
-            this.mh02509.AutoSize = true;
-            this.mh02509.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh02509.Location = new System.Drawing.Point(83, 3);
-            this.mh02509.Name = "mh02509";
-            this.mh02509.Size = new System.Drawing.Size(43, 17);
-            this.mh02509.TabIndex = 81;
-            this.mh02509.TabStop = true;
-            this.mh02509.Text = "NR";
-            this.mh02509.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(741, 156);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 19);
-            this.label9.TabIndex = 368;
-            this.label9.Text = "Referred By";
-            // 
-            // mh010b1
-            // 
-            this.mh010b1.AutoSize = true;
-            this.mh010b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh010b1.Location = new System.Drawing.Point(744, 172);
-            this.mh010b1.Name = "mh010b1";
-            this.mh010b1.Size = new System.Drawing.Size(84, 19);
-            this.mh010b1.TabIndex = 369;
-            this.mh010b1.Text = "CHW/LHW";
-            this.mh010b1.UseVisualStyleBackColor = true;
-            this.mh010b1.CheckedChanged += new System.EventHandler(this.mh010b1_CheckedChanged);
-            // 
-            // mh010b2
-            // 
-            this.mh010b2.AutoSize = true;
-            this.mh010b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh010b2.Location = new System.Drawing.Point(744, 192);
-            this.mh010b2.Name = "mh010b2";
-            this.mh010b2.Size = new System.Drawing.Size(120, 19);
-            this.mh010b2.TabIndex = 370;
-            this.mh010b2.Text = "Social Mobilizers";
-            this.mh010b2.UseVisualStyleBackColor = true;
-            this.mh010b2.CheckedChanged += new System.EventHandler(this.mh010b2_CheckedChanged);
-            // 
-            // mh010b3
-            // 
-            this.mh010b3.AutoSize = true;
-            this.mh010b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh010b3.Location = new System.Drawing.Point(744, 211);
-            this.mh010b3.Name = "mh010b3";
-            this.mh010b3.Size = new System.Drawing.Size(89, 19);
-            this.mh010b3.TabIndex = 371;
-            this.mh010b3.Text = "Polio Team";
-            this.mh010b3.UseVisualStyleBackColor = true;
-            this.mh010b3.CheckedChanged += new System.EventHandler(this.mh010b3_CheckedChanged);
-            // 
-            // mh010b77
-            // 
-            this.mh010b77.AutoSize = true;
-            this.mh010b77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh010b77.Location = new System.Drawing.Point(744, 246);
-            this.mh010b77.Name = "mh010b77";
-            this.mh010b77.Size = new System.Drawing.Size(62, 19);
-            this.mh010b77.TabIndex = 372;
-            this.mh010b77.Text = "Others";
-            this.mh010b77.UseVisualStyleBackColor = true;
-            this.mh010b77.CheckedChanged += new System.EventHandler(this.mh010b77_CheckedChanged);
-            // 
-            // mh010b77x
-            // 
-            this.mh010b77x.BackColor = System.Drawing.Color.Silver;
-            this.mh010b77x.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mh010b77x.Enabled = false;
-            this.mh010b77x.Location = new System.Drawing.Point(744, 267);
-            this.mh010b77x.Mask = ">??????????????????????????????????????????????????";
-            this.mh010b77x.Name = "mh010b77x";
-            this.mh010b77x.Size = new System.Drawing.Size(118, 20);
-            this.mh010b77x.TabIndex = 373;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(146, 154);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 19);
-            this.label10.TabIndex = 374;
-            // 
-            // mh010b9
-            // 
-            this.mh010b9.AutoSize = true;
-            this.mh010b9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mh010b9.Location = new System.Drawing.Point(744, 228);
-            this.mh010b9.Name = "mh010b9";
-            this.mh010b9.Size = new System.Drawing.Size(44, 19);
-            this.mh010b9.TabIndex = 375;
-            this.mh010b9.Text = "NR";
-            this.mh010b9.UseVisualStyleBackColor = true;
-            this.mh010b9.CheckedChanged += new System.EventHandler(this.mh010b9_CheckedChanged);
-            // 
             // frmMSHIMG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 300);
-            this.ClientSize = new System.Drawing.Size(1255, 1045);
+            this.ClientSize = new System.Drawing.Size(1272, 1045);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2052,6 +2095,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -2074,8 +2119,6 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -2242,5 +2285,9 @@
         private System.Windows.Forms.MaskedTextBox mh010b77x;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.CheckBox mh010b9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox mh026020;
+        private System.Windows.Forms.CheckBox mh026021;
+        private System.Windows.Forms.CheckBox mh026022;
     }
 }

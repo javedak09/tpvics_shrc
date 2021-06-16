@@ -836,6 +836,12 @@ namespace tpvics_shrc
                     fd.mh026017 = ds.Tables[0].Rows[a]["mh026017"].ToString();
                     fd.mh026018 = ds.Tables[0].Rows[a]["mh026018"].ToString();
                     fd.mh026019 = ds.Tables[0].Rows[a]["mh026019"].ToString();
+
+                    fd.mh026020 = ds.Tables[0].Rows[a]["mh026020"].ToString();
+                    fd.mh026021 = ds.Tables[0].Rows[a]["mh026021"].ToString();
+                    fd.mh026022 = ds.Tables[0].Rows[a]["mh026022"].ToString();
+                    fd.patientType = ds.Tables[0].Rows[a]["patientType"].ToString();
+
                     fd.chkVaccination = ds.Tables[0].Rows[a]["chkVaccination"].ToString();
 
 
@@ -863,6 +869,8 @@ namespace tpvics_shrc
                     fd.dist_id = ds.Tables[0].Rows[a]["dist_id"].ToString();
                     fd.databy = "desktop";
                     fd.userid = ds.Tables[0].Rows[a]["userid"].ToString();
+                    fd.username = ds.Tables[0].Rows[a]["username"].ToString();
+
                     fd.entrydate = ds.Tables[0].Rows[a]["entrydate"].ToString();
                     fd.master_id = ds.Tables[0].Rows[a]["master_id"].ToString();
 
@@ -992,6 +1000,9 @@ namespace tpvics_shrc
             public string mh026017;
             public string mh026018;
             public string mh026019;
+            public string mh026020;
+            public string mh026021;
+            public string mh026022;
             public string chkVaccination;
 
             public string mh027;
@@ -1019,7 +1030,9 @@ namespace tpvics_shrc
             public string dist_id;
             public string databy;
             public string userid;
+            public string username;
             public string entrydate;
+            public string patientType;
 
             public string master_id;
 
