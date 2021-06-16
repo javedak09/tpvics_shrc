@@ -1983,6 +1983,7 @@ namespace tpvics_shrc
                     panel9.Enabled = true;
 
 
+
                     obj_op.EnableControls(mh01701);
                     obj_op.EnableControls(mh01702);
                     obj_op.EnableControls(mh01703);
