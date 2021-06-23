@@ -3879,7 +3879,7 @@ namespace tpvics_shrc
 
                         CVariables.uc_code = ds.Tables[0].Rows[0]["ucCode"].ToString();
 
-                        GetDoctorsHMSNo();
+                        //GetDoctorsHMSNo();
                     }
                     else
                     {
